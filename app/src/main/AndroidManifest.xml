@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.lukehere.app.cycle">
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".activities.SplashActivity"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.IntroductionActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activities.AuthenticationActivity"
+            android:label="@string/Sign_in"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activities.ForgotPasswordActivity"
+            android:label="@string/forgot_password"
+            android:launchMode="singleTop"
+            android:parentActivityName=".activities.AuthenticationActivity" />
+        <activity
+            android:name=".activities.CycleActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activities.CycleEditorActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName=".activities.CycleActivity" />
+        <activity
+            android:name=".activities.StatisticsActivity"
+            android:label="@string/statistics"
+            android:launchMode="singleTop"
+            android:parentActivityName=".activities.CycleActivity" />
+        <activity
+            android:name=".activities.AboutActivity"
+            android:label="@string/about"
+            android:launchMode="singleTop"
+            android:parentActivityName=".activities.CycleActivity" />
+        <activity
+            android:name=".activities.HistoryActivity"
+            android:label="@string/history"
+            android:launchMode="singleTop"
+            android:parentActivityName=".activities.CycleActivity" />
+        <activity
+            android:name=".activities.SignOutActivity"
+            android:label="@string/sign_out"
+            android:launchMode="singleTop"
+            android:parentActivityName=".activities.CycleActivity" />
+    </application>
+
+</manifest>

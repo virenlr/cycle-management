@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cycle_card"
+        style="@style/StandardCardView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/StandardTextHeader"
+                        android:text="@string/cycle_number" />
+
+                    <TextView
+                        android:id="@+id/history_cycle_number"
+                        style="@style/StandardTextHeader" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/SpecialTextHeader"
+                        android:layout_marginTop="0dp"
+                        android:text="@string/borrowed_on" />
+
+                    <TextView
+                        android:id="@+id/history_borrowed_at"
+                        style="@style/StandardTextBody"
+                        android:layout_marginTop="0dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/SpecialTextHeader"
+                        android:layout_marginTop="0dp"
+                        android:text="@string/returned_on" />
+
+                    <TextView
+                        android:id="@+id/history_returned_at"
+                        style="@style/StandardTextBody"
+                        android:layout_marginTop="0dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/SpecialTextHeader"
+                        android:layout_marginTop="0dp"
+                        android:text="@string/security" />
+
+                    <TextView
+                        android:id="@+id/history_security_email"
+                        style="@style/StandardTextBody"
+                        android:layout_marginTop="0dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/history_details_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/SpecialTextHeader"
+                        android:layout_marginTop="0dp"
+                        android:text="@string/registration_number" />
+
+                    <TextView
+                        android:id="@+id/history_registration_number"
+                        style="@style/StandardTextBody"
+                        android:layout_marginTop="0dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/SpecialTextHeader"
+                        android:layout_marginTop="0dp"
+                        android:text="@string/full_name" />
+
+                    <TextView
+                        android:id="@+id/history_full_name"
+                        style="@style/StandardTextBody"
+                        android:layout_marginTop="0dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/SpecialTextHeader"
+                        android:layout_marginTop="0dp"
+                        android:text="@string/phone_number" />
+
+                    <TextView
+                        android:id="@+id/history_phone_number"
+                        style="@style/StandardTextBody"
+                        android:layout_marginTop="0dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/SpecialTextHeader"
+                        android:layout_marginTop="0dp"
+                        android:text="@string/borrowed_from" />
+
+                    <TextView
+                        android:id="@+id/history_borrowed_from"
+                        style="@style/StandardTextBody"
+                        android:layout_marginTop="0dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/SpecialTextHeader"
+                        android:layout_marginTop="0dp"
+                        android:text="@string/returned_to" />
+
+                    <TextView
+                        android:id="@+id/history_returned_to"
+                        style="@style/StandardTextBody"
+                        android:layout_marginTop="0dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <color name="colorPrimary">#022e53</color>
+    <color name="colorPrimaryDark">#00032a</color>
+    <color name="colorAccent">#c19954</color>
+
+    <color name="backgroundWhite">#ffffff</color>
+
+    <color name="textColorWhite">#ffffff</color>
+    <color name="textColorBlack">#000000</color>
+
+    <color name="cycleStatusGreen">#4CAF50</color>
+    <color name="cycleStatusAmber">#FFC107</color>
+    <color name="cycleStatusRed">#F44336</color>
+    <color name="cycleStatusBlack">#000000</color>
+</resources>

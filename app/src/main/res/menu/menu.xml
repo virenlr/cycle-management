@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_new_cycle"
+        android:icon="@drawable/ic_action_add"
+        android:title="@string/add_cycle"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_statistics"
+        android:icon="@drawable/ic_action_insert_chart"
+        android:title="@string/statistics"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu_history"
+        android:icon="@drawable/ic_action_history"
+        android:title="@string/history"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu_sign_out"
+        android:title="@string/sign_out"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_about"
+        android:title="@string/about"
+        app:showAsAction="never" />
+</menu>

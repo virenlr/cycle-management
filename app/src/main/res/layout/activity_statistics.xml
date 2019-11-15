@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/statistics_progress_bar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminate="true"
+            android:indeterminateOnly="true"
+            android:visibility="gone" />
+
+        <com.google.android.material.card.MaterialCardView style="@style/StandardCardView">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/StandardTextBody"
+                        android:text="@string/total_number_of_cycles" />
+
+                    <TextView
+                        android:id="@+id/statistics_total_number_of_cycles"
+                        style="@style/StandardTextBody"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/StandardTextBody"
+                        android:text="@string/number_of_available_cycles" />
+
+                    <TextView
+                        android:id="@+id/statistics_number_of_available_cycles"
+                        style="@style/StandardTextBody"
+                        android:textColor="@color/cycleStatusGreen"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/StandardTextBody"
+                        android:text="@string/number_of_cycles_in_use" />
+
+                    <TextView
+                        android:id="@+id/statistics_number_of_cycles_in_use"
+                        style="@style/StandardTextBody"
+                        android:textColor="@color/cycleStatusAmber"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/StandardTextBody"
+                        android:text="@string/number_of_broken_cycles" />
+
+                    <TextView
+                        android:id="@+id/statistics_number_of_broken_cycles"
+                        style="@style/StandardTextBody"
+                        android:textColor="@color/cycleStatusRed"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/StandardTextBody"
+                        android:text="@string/number_of_decommissioned_cycles" />
+
+                    <TextView
+                        android:id="@+id/statistics_number_of_decommissioned_cycles"
+                        style="@style/StandardTextBody"
+                        android:textColor="@color/cycleStatusBlack"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView style="@style/StandardCardView">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/SpecialTextHeader"
+                    android:text="@string/location_wise_availability" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/StandardTextBody"
+                        android:text="@string/fourth_block" />
+
+                    <TextView
+                        android:id="@+id/statistics_number_of_cycles_in_fourth_block"
+                        style="@style/StandardTextBody" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/StandardTextBody"
+                        android:text="@string/devadan_block" />
+
+                    <TextView
+                        android:id="@+id/statistics_number_of_cycles_in_devadan_block"
+                        style="@style/StandardTextBody" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView style="@style/StandardCardView">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/SpecialTextHeader"
+                    android:text="@string/damages" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/StandardTextBody"
+                        android:text="@string/tyres" />
+
+                    <TextView
+                        android:id="@+id/statistics_tyres"
+                        style="@style/StandardTextBody" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/StandardTextBody"
+                        android:text="@string/chain" />
+
+                    <TextView
+                        android:id="@+id/statistics_chain"
+                        style="@style/StandardTextBody" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/StandardTextBody"
+                        android:text="@string/cable" />
+
+                    <TextView
+                        android:id="@+id/statistics_cable"
+                        style="@style/StandardTextBody" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/StandardTextBody"
+                        android:text="@string/brake" />
+
+                    <TextView
+                        android:id="@+id/statistics_brake"
+                        style="@style/StandardTextBody" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/StandardTextBody"
+                        android:text="@string/lubrication" />
+
+                    <TextView
+                        android:id="@+id/statistics_lubrication"
+                        style="@style/StandardTextBody" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/StandardTextBody"
+                        android:text="@string/miscellaneous" />
+
+                    <TextView
+                        android:id="@+id/statistics_miscellaneous"
+                        style="@style/StandardTextBody" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+</ScrollView>

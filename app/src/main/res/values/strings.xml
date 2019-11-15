@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">Cycle Management</string>
+
+    <!-- Introduction -->
+    <string name="intro_body_one">Welcome to the official cycle management application of CHRIST (Deemed to be University). This app is used for the efficient management of cycles at the Kengeri Campus and aims to increase the accountability on the part of the student community, while also making it easier for the management to track and maintain cycles within the premises.</string>
+    <string name="intro_body_two">Designed and Developed by the Student Council of the Faculty of Engineering, CHRIST (Deemed to be University).</string>
+    <string name="start">Start</string>
+    <string name="back_to_exit">Press back one more time to exit</string>
+
+    <!-- Authentication -->
+    <string name="a_student_council_initiative">A Student Council Initiative.</string>
+
+    <string name="Sign_in">Sign in</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgot_password_enter_email">Please enter the email address with which you were registered. The password reset link will be sent to you via email.</string>
+    <string name="send_email">Send email</string>
+    <string name="enter_registered_email_address">Please enter your registered email address.</string>
+    <string name="please_enter_password">Please enter your password.</string>
+    <string name="authentication_failed">Authentication failed.</string>
+    <string name="email_not_registered">Your email is not registered with us.</string>
+    <string name="email_sent">Email sent.</string>
+    <string name="warning">Warning</string>
+    <string name="okay">Okay</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- Screen titles -->
+    <string name="add_cycle">Add cycle</string>
+    <string name="statistics">Statistics</string>
+    <string name="history">History</string>
+    <string name="sign_out">Sign out</string>
+    <string name="about">About</string>
+
+    <!-- Cycle Editor -->
+    <string name="cycle_number">Cycle</string>
+    <string name="status_explanation">The status refers to whether a cycle is in-use by a student or is parked at one of the designated locations. The status must only be changed after the cycle has been thoroughly inspected, and the student details must be noted in the complaint section in case of any damage.</string>
+    <string name="status">Status</string>
+    <string name="registration_number">Registration number</string>
+    <string name="full_name">Full name</string>
+    <string name="phone_number">Phone number</string>
+    <string name="repair_explanation">Use the below form to indicate which parts of the cycle need to be repaired. Enabling any of the buttons will indicate that the cycle is in unusable condition, requiring repair.</string>
+    <string name="tyres">Tyres</string>
+    <string name="chain">Chain</string>
+    <string name="cable">Cable</string>
+    <string name="brake">Brake</string>
+    <string name="lubrication">Lubrication</string>
+    <string name="miscellaneous">Miscellaneous</string>
+    <string name="created_on">Created on</string>
+    <string name="decommissioned_explanation">Decommissioning a cycle will cause it to be virtually removed from the list of cycles. You will not be able to assign a decommissioned cycle.</string>
+    <string name="decommission">Decommission</string>
+    <string name="decommissioned_on">Decommissioned on</string>
+    <string name="add_cycle_warning">Are you sure you want to add a new cycle?</string>
+    <string name="no_internet_connection">Cannot proceed without an internet connection.</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="done">Done</string>
+
+    <!--String array of possible locations -->
+    <string-array name="location_list">
+        <item>Fourth Block</item>
+        <item>Devadan Block</item>
+    </string-array>
+
+    <!-- Statistics -->
+    <string name="total_number_of_cycles">Total number of cycles</string>
+    <string name="number_of_available_cycles">Number of available cycles</string>
+    <string name="number_of_cycles_in_use">Number of cycles in-use</string>
+    <string name="number_of_broken_cycles">Number of broken cycles</string>
+    <string name="number_of_decommissioned_cycles">Number of decommissioned cycles</string>
+    <string name="location_wise_availability">Location-wise availability</string>
+    <string name="fourth_block">Fourth Block</string>
+    <string name="devadan_block">Devadan Block</string>
+    <string name="damages">Damages</string>
+    <string name="refresh">Refresh</string>
+
+    <!-- History -->
+    <string name="borrowed_on">Borrowed on</string>
+    <string name="returned_on">Returned on</string>
+    <string name="security">Security</string>
+    <string name="borrowed_from">Borrowed from</string>
+    <string name="returned_to">Returned to</string>
+
+    <!-- Sign Out -->
+    <string name="we_hope_to_see_you_again_soon">We hope to see you again soon! If you are experiencing any issues with the app, please do not hesitate to inform the Student Council.</string>
+    <string name="are_you_sure_you_want_to_sign_out">Are you sure you want to sign out of the application? You can sign back in at any time.</string>
+
+</resources>
